@@ -18,6 +18,7 @@ nav  {
 
 nav a {
    color: var(--primery-font-color) !important;
+   font-family: var(--secondery-font-family);
 }
 /*header*/
 
@@ -80,9 +81,11 @@ main {
 }
 
 /*footer*/
-footer {
-
-}
+ .footer-links {
+  text-decoration: none;
+  color: var(--primery-font-color);
+  font-family: var(--secondery-font-family);
+ }
 
 
 
