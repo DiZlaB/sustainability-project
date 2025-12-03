@@ -2,16 +2,24 @@
  --primery-font-family: "Ysabeau SC", sans-serif;
  --primery-font-color: #16423C;
  --secondery-font-family: "Poiret One", sans-serif;
-
  --primery-bg-color:  #C4DAD2; 
-  --secondery-bg-color: #E9EFEC;
+--secondery-bg-color: #E9EFEC;
 } 
 body{
   margin: 0 auto;
   text-align: center;
+  background-color: var(--secondery-bg-color);
+  color: var(--primery-font-color);
 }
 /*navbar*/
+nav  {
+  background-color: var(--secondery-bg-color);
+}
 
+nav a {
+   color: var(--primery-font-color) !important;
+}
+/*header*/
 
 header {
   display: flex;
@@ -23,7 +31,6 @@ header {
   text-align: center;
   align-items: center;
   min-height: 70vh;
-  border-color: var(--secondery-bg-color);
 }
 
 h1,h2{
@@ -44,13 +51,53 @@ main {
   background-color: var(--primery-bg-color);
 }
 .coverpic-landingpage {
-  width: 450px;
-  height: 250px;     
+  width: 100%;
+  height: 150px;     
   object-fit: cover;  
   object-position: center;
 }
 .coverpic-landingpage:hover {
-  transform:scale(1.2);
+  transform:scale(1.1);
   transition: all 150ms ease-in-out;
 }
+.image-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+
+}
+
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondery-bg-color);
+  font-family: var(--primery-font-family);
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
 /*footer*/
+footer {
+
+}
+
+
+
+
+/* old code 
+
+ <main class="main pt-5 pb-5">
+      <div class="container">
+      <div class="row row-cols-2">
+  <div class="col p-3"><a href="content-HTML/water.html" class="image-card"><img src="style/imgs/water_ocean.jpg"  class="img-fluid rounded-3 coverpic-landingpage" alt=""><span class="image-title">WATER</span></a></div>
+  <div class="col p-3"><a href="content-HTML/soil.html" class="image-card"> <img src="style/imgs/soil.jpg" class="img-fluid rounded-3 coverpic-landingpage" alt=""><span class="image-title">SOIL</span></a></div>
+</div>
+    <div class="row row-cols-2">
+  <div class="col p-3"><a href="content-HTML/plastic.html" class="image-card"><img src="style/imgs/plastic.jpg"  class="img-fluid rounded-3 coverpic-landingpage" alt=""><span class="image-title">PLASTIC POLUTION</span></a></div>
+  <div class="col p-3"><a href="content-HTML/technology.html" class="image-card"><img src="style/imgs/bio technology.jpg" class="img-fluid rounded-3 coverpic-landingpage" alt=""><span class="image-title">SUSTAINBLE TECHNOLOGIES</span></a></div>
+</div>
+      </div>
+    </main> */
