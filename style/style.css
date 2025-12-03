@@ -1,11 +1,56 @@
-.header {
+:root {
+ --primery-font-family: "Ysabeau SC", sans-serif;
+ --primery-font-color: #16423C;
+ --secondery-font-family: "Poiret One", sans-serif;
+
+ --primery-bg-color:  #C4DAD2; 
+  --secondery-bg-color: #E9EFEC;
+} 
+body{
+  margin: 0 auto;
+  text-align: center;
+}
+/*navbar*/
+
+
+header {
   display: flex;
   background-image: url("imgs/landingpage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  justify-content: center;
   text-align: center;
   align-items: center;
   min-height: 70vh;
+  border-color: var(--secondery-bg-color);
 }
 
+h1,h2{
+  font-family: var(--primery-font-family);
+  color: var(--primery-font-color);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: var(--secondery-font-family);
+  font-weight: bold;
+  color: var(--primery-font-color);
+}
+
+/* main*/
+main {
+  background-color: var(--primery-bg-color);
+}
+.coverpic-landingpage {
+  width: 450px;
+  height: 250px;     
+  object-fit: cover;  
+  object-position: center;
+}
+.coverpic-landingpage:hover {
+  transform:scale(1.2);
+  transition: all 150ms ease-in-out;
+}
+/*footer*/
