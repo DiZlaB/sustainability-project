@@ -59,6 +59,7 @@ header {
 }
 .about-header {
   background-color: var(--primery-bg-color);
+  min-height: 50vh;
 }
 /*titles*/
 .header-title, .header-subtitle,
@@ -72,7 +73,10 @@ header {
   font-family: var(--secondery-font-family);
   font-weight: bolder;
 }
-
+.introduction {
+  width: 100%;
+  padding: 50px;
+}
 
 /* main*/
 main {
@@ -107,6 +111,9 @@ main {
 }
 .content-text {
   font-family: var(--secondery-font-family);
+  text-align: justify;
+  padding: 50px;
+  width: auto;
 }
 
 
@@ -123,7 +130,7 @@ main {
  /*media*/
 
  @media (max-width: 527px) {
-h1, h2, .image-title {
+h1, h2, h3 .image-title {
   font-size: 20px;
 }
  p { font-size: 15px;} 
