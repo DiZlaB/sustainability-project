@@ -13,16 +13,17 @@ body{
   background-color: var(--secondery-bg-color);
   color: var(--primery-font-color);
   overflow-x: hidden;
-  font-family: var(--secondery-font-family);
 }
 /*navbar*/
 nav  {
   background-color: var(--secondery-bg-color);
+  font-family: var(--primery-font-family);
+}
+.nav-link, .navbar-brand {
+  color: var(--primery-font-color) !important;
+  font-family: var(--primery-font-family) !important;
 }
 
-nav a {
-   color: var(--primery-font-color) !important;
-}
 /*header*/
 header {
   display: flex;
@@ -60,19 +61,19 @@ header {
   background-color: var(--primery-bg-color);
 }
 /*titles*/
-.header-title, .header-subtitle{
+.header-title, .header-subtitle,
+.h-content-title, .h-content-subtitle{
   font-family: var(--primery-font-family);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-.header-message {
+.header-message, .h-content-message {
   font-family: var(--secondery-font-family);
-  font-weight: bold;
+  font-weight: bolder;
 }
-.header-content-message {
-  font-size: 20px;
-}
+
+
 /* main*/
 main {
   background-color: var(--primery-bg-color);
@@ -104,7 +105,9 @@ main {
   font-weight: bold;
   text-shadow: 0 0 8px rgba(0,0,0,0.6);
 }
-
+.content-text {
+  font-family: var(--secondery-font-family);
+}
 
 
 /*footer*/
@@ -114,7 +117,9 @@ main {
   font-family: var(--secondery-font-family);
  }
 
-
+.footer-title{
+  font-family: var(--primery-font-family);
+}
  /*media*/
 
  @media (max-width: 527px) {
