@@ -139,6 +139,11 @@ h1, h2, h3 .image-title {
  .footer-links, .footer-title {
   font-size: small;
  }
+ .content-text {
+  padding-top: 10px;
+  padding-left: none;
+  padding-right: none;
+ }
  }
 
 /* old code 
