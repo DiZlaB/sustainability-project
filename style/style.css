@@ -73,10 +73,6 @@ header {
   font-family: var(--secondery-font-family);
   font-weight: bolder;
 }
-.introduction {
-  width: 100%;
-  padding: 50px;
-}
 
 /* main*/
 main {
@@ -112,10 +108,15 @@ main {
 .content-text {
   font-family: var(--secondery-font-family);
   text-align: justify;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   width: auto;
+  font-weight:600;
 }
-
+.introduction {
+  width: 100%;
+  padding: 50px;
+}
 
 /*footer*/
  .footer-links {
